@@ -1,16 +1,29 @@
 # flutter_application_1
 
-A new Flutter project.
+التمرين الأول: Basic Stack Navigation
 
-## Getting Started
+الخطوة 1: عند تشغيل التطبيق تظهر شاشة HomeScreen فقط داخل الـ Stack.
+![alt text](Screen/homeScreen.png)
+الخطوة 2: عند الضغط على زر الانتقال يتم استخدام Navigator.push() لإضافة شاشة DetailScreen فوق الشاشة الحالية.
+![alt text](Screen/detailScreen.png)
+الخطوة 3: يصبح الـ Stack يحتوي على شاشتين: HomeScreen ثم DetailScreen.
 
-This project is a starting point for a Flutter application.
+الخطوة 4: عند الضغط على زر الرجوع يتم استخدام Navigator.pop() لإزالة شاشة DetailScreen.
 
-A few resources to get you started if this is your first Flutter project:
+الخطوة 5: يعود التطبيق إلى شاشة HomeScreen فقط.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+التمرين الثاني: Passing and Returning Data
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+الخطوة 1: عند تشغيل التطبيق تظهر شاشة ProductListScreen التي تحتوي على قائمة المنتجات.
+![alt text](<Screen/product list.png>)
+الخطوة 2: عند اختيار منتج يتم استخدام Navigator.push() للانتقال إلى شاشة ProductDetailsScreen مع إرسال اسم المنتج.
+
+الخطوة 3: يتم عرض تفاصيل المنتج في الشاشة الثانية.
+![alt text](Screen/product.png)
+الخطوة 4: عند الضغط على زر Add to Favorites يتم استخدام Navigator.pop() لإرجاع رسالة Added to favorites إلى الشاشة السابقة.
+![alt text](Screen/Favorites.png)
+الخطوة 5: تظهر الرسالة في SnackBar داخل شاشة المنتجات.
+
+الخطوة 6: يعود التطبيق إلى شاشة ProductListScreen بعد إزالة شاشة التفاصيل من الـ Stack.
+
+
